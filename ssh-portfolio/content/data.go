@@ -40,9 +40,8 @@ var MyProfile = Profile{
 	Location: "Edmonton, AB, Canada",
 	Email:    "samarde1@ualberta.ca",
 	Bio: []string{
-		"Engineering student at the University of Alberta, transferring into the BSc Computing Science – AI Major (Fall 2026). Focused on reinforcement learning, graph neural networks, and computational drug discovery.",
-		"Previously 15 months as a Data Analyst / ML Intern at Molecule AI — drug-target interaction analysis, molecular toxicity classifiers, SMILES preprocessing pipelines.",
-		"Software team member at ARVP building ROS2 computer vision pipelines and the team's first RL integration for autonomous underwater navigation on Kenai, an AUV competing in RoboSub.",
+		"Engineering student at University of Alberta. Passionate about using ML in interdisciplinary areas like computational biology & drug design, physics, telecommunication, sustainability, renewable energy, hardware systems, etc. I mean I find it very innovative when 2 things from different fields get combined to form or predict a newly solution that nobody had thought of, kinda like Alphafold. ",		"Previously 4 months as a Data Analyst / ML Intern at Molecule AI — drug-target interaction analysis, molecular toxicity classifiers, SMILES preprocessing pipelines.",
+		"Software team member at UAARG working on Shepard — the onboard imaging and autopilot system running on Raspberry Pi. Building real-time ArUco marker detection pipelines with OpenCV and streaming annotated video output to Emu, UAARG's ground station frontend, in support of competition missions at Unmanned Systems Canada and AUVSI SUAS.",
 	},
 }
 
@@ -50,7 +49,7 @@ var Jobs = []Job{
 	{
 		Title:   "Data Analyst / Machine Learning Intern",
 		Company: "Molecule AI Pvt. Ltd. — New Delhi, India",
-		Period:  "Mar 2023 – Jun 2024",
+		Period:  "Jan 2024 – Apr 2024",
 		Bullets: []string{
 			"Engineered end-to-end preprocessing pipelines for molecular property datasets (SMILES strings, bioactivity labels) enabling reproducible feature engineering for GNN and Ridge Regression models.",
 			"Conducted EDA on drug-target interaction datasets; statistical modeling identified physicochemical feature correlations that improved virtual screening hit rates.",
@@ -70,20 +69,22 @@ var Jobs = []Job{
 		Tags: []string{"Data Analysis", "Reporting", "Operations"},
 	},
 	{
-		Title:   "Software Team Member – Perception & RL Integration",
-		Company: "Autonomous Robotic Vehicle Project (ARVP), University of Alberta",
+		Title:   "Software Team Member – Imaging & Onboard Perception",
+		Company: "UAARG (University of Alberta Aerial Robotics Group)",
 		Period:  "Oct 2025 – Present",
 		Bullets: []string{
-			"Developing ROS2-based computer vision pipelines for Kenai, ARVP's AUV competing in the international RoboSub Competition; implementing YOLO-based underwater object detection integrated into mission-planning behaviour trees.",
-			"Pioneering the team's first RL integration — designing a reward-structured simulation environment to replace hand-tuned controllers with a deep RL policy for autonomous underwater navigation.",
+			"Contributing to Shepard, UAARG's onboard drone software stack running on Raspberry Pi — implementing real-time ArUco marker detection with OpenCV for precise localization and target identification during autonomous flight missions.",
+			"Developing a live video streaming pipeline that overlays ArUco bounding box annotations and telemetry onto frames transmitted to Emu, UAARG's ground station imaging frontend, enabling operators to monitor detection confidence in real time.",
+			"Supporting UAARG's annual entries in the Unmanned Systems Canada Student UAS Competition and AUVSI SUAS, where the full imaging pipeline — from onboard capture to ground-station analysis — is evaluated under competition conditions.",
+			"Exploring the integration of deep reinforcement learning to replace hand-tuned flight controllers with learned autonomous navigation policies — designing initial reward structures and simulation environments for UAV decision-making.",
 		},
-		Tags: []string{"ROS2", "Python", "YOLO", "OpenCV", "Reinforcement Learning", "Behaviour Trees"},
+		Tags: []string{"Python", "OpenCV", "ArUco", "Raspberry Pi", "Computer Vision", "Video Streaming", "UAV"},
 	},
 }
 
 var Projects = []Project{
 	{
-		Name:        "TorsionNet — Deep RL for Molecular Conformer Generation",
+		Name:        "TorsionNet — Deep RL for Molecular Conformer Generation -- In Progress",
 		Event:       "HackED 2026",
 		Description: "Replicated TorsionNet (NeurIPS), a deep RL approach to conformer search. Built a custom OpenAI Gym environment with RDKit, trained a PPO agent with an MPNN backbone and curriculum learning, deployed inference via FastAPI and Docker. Achieved 90% reduction in generation time vs. brute-force search.",
 		Tags:        []string{"PyTorch", "PyTorch Geometric", "RDKit", "PPO", "GNN", "FastAPI", "Docker"},
@@ -116,11 +117,11 @@ var SkillGroups = []SkillGroup{
 	},
 	{
 		Category: "Robotics / CV",
-		Items:    []string{"ROS2", "OpenCV", "YOLO", "Behaviour Trees", "AUV Stack", "3D CAD"},
+		Items:    []string{"OpenCV", "ArUco", "YOLO", "Raspberry Pi", "Video Streaming", "UAV Imaging", "Computer Vision Pipelines", "Unity Simulations"},
 	},
 	{
 		Category: "Engineering / MLOps",
-		Items:    []string{"Docker", "Git", "SSH", "Linux", "FastAPI", "REST APIs", "CI/CD", "AWS", "Supabase", "React + typescript framework", "GoLang"},
+		Items:    []string{"Docker", "Git", "SSH", "Linux", "FastAPI", "REST APIs", "CI/CD", "AWS", "Supabase", "React + typescript framework", "GoLang", "MLflow"},
 	},
 }
 
