@@ -98,6 +98,13 @@ var Projects = []Project{
 		URL:         "",
 	},
 	{
+		Name:        "MACE-MP-0 ML Force Field — Browser-Native Deployment via ONNX",
+		Event:       "Side Project",
+		Description: "Converted MACE-MP-0 (3.8M parameter ML force field) from PyTorch to ONNX with dynamic graph support, enabling browser-native inference via ONNX Runtime Web — no Python, no server. Built an ASE-compatible Calculator wrapping the ONNX model; energy predictions match PyTorch to float32 precision (Δ < 2×10⁻⁶ eV) across 6 molecules from water to benzene. Deployed an interactive Marimo notebook via WebAssembly where Python drives live ML inference through a Python-to-JS bridge — state-of-the-art ML force fields with zero installation.",
+		Tags:        []string{"Python", "PyTorch", "ONNX", "ONNX Runtime Web", "ASE", "WebAssembly", "Marimo", "Computational Chemistry"},
+		URL:         "",
+	},
+	{
 		Name:        "SSH Terminal Portfolio",
 		Event:       "Side Project",
 		Description: "Interactive portfolio served over raw SSH — no browser, no login required. Built a Go SSH server using Wish middleware that spawns a full Bubbletea TUI per session. Features 5 navigable tabs, 3 switchable color themes, true-color portrait rendering via half-block Unicode (▄) with 24-bit ANSI, OSC 8 clickable hyperlinks, and automated CI/CD to Fly.io via GitHub Actions. Packaged as a ~7 MB Alpine Docker image. Connect: ssh -p 23234 samar-personal-portfolio.fly.dev",
@@ -121,7 +128,7 @@ var SkillGroups = []SkillGroup{
 	},
 	{
 		Category: "Engineering / MLOps",
-		Items:    []string{"Docker", "Git", "SSH", "Linux", "FastAPI", "REST APIs", "CI/CD", "AWS", "Supabase", "React + typescript framework", "GoLang", "MLflow"},
+		Items:    []string{"Docker", "Git", "SSH", "Linux", "FastAPI", "REST APIs", "CI/CD", "AWS", "Supabase", "React + typescript framework", "GoLang", "MLflow", "ONNX", "WebAssembly"},
 	},
 }
 
